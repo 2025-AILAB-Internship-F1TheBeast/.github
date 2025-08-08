@@ -66,6 +66,7 @@ ultimate_f1thebeast_ws/
 ├── f1thebeast_ws/              # Main workspace for online execution
 ├── ekf_slam/                   # Custom EKF-SLAM implementation
 ├── teleop-tools/               # Keyboard teleoperation tools
+├── minimum_curvature_global_planner/               # Raceline Optimization with Minimum Curvature method
 └── basecode_follow_the_gap/    # Beginner-friendly base code
 ```
 
