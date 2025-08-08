@@ -1,109 +1,143 @@
-# F1TheBeast 🏎️
+<div align="center">
 
-**AILAB Summer Internship 2025**
+![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=F1TheBeast&fontSize=90&animation=fadeIn&fontAlignY=38&desc=AILAB%20Summer%20Internship%202025&descAlignY=65&descAlign=62)
 
-Building F1Tenth Autonomous Driving Machine
+### 🏎️ **Building F1Tenth Autonomous Driving Machine** 🏎️
 
-## Team Members
+**Racing towards autonomous excellence with cutting-edge algorithms**
 
-### Leadership
+</div>
+
+---
+
+<div align="center">
+
+## **Our Team**
+
+</div>
+
+### **Leadership**
 - **Jisang Yun** - Team Leader & Perception Lead
   - EKF Odometry & Particle Filter Localization (C++)
+  - Competition Winner & Technical Visionary
 
-### Perception Team
+### **Perception Team**
 - **Jisang Yun** - Team Leader
   - EKF Odometry & Particle Filter Localization implementation
-- **Subin Park** - SLAM Engineer
+- **Subin Park** - SLAM Engineer  
   - EKF-SLAM implementation & mapping systems
 
-### Planning Team
+### **Planning Team**
 - **Yongwoo Kwon** - Global Planning Lead
   - Global trajectory planning & path optimization
 - **Jonghun Ahn** - Local Planning Engineer
   - Local path planning & obstacle avoidance
 
-### Control Team
+### **Control Team**
 - **Yunsang Jeong** - Control Engineer
   - Stanley controller & PID control systems
 
-## Project Overview
+<div align="center">
 
-We are developing an autonomous F1Tenth racing car as part of the AILAB Summer Internship 2025 program. Our team focuses on three core areas:
+## **Project Overview**
 
-- **Perception**: Processing sensor data and environment understanding
-- **Planning**: Path planning and decision making algorithms
-- **Control**: Vehicle control and actuation systems
+</div>
 
-## Repository Architecture
+We are developing an autonomous F1Tenth racing car as part of the **AILAB Summer Internship 2025** program. Our team focuses on three core areas:
 
-### Main Repository Structure
-- **`ultimate_f1thebeast_ws`** - Ultimate repository containing all submodules
-  - **`f1thebeast_ws`** - Main workspace for online execution
-  - **`ekf_slam`** - Custom EKF-SLAM implementation
-  - **`teleop-tools`** - Keyboard teleoperation tools for manual driving
-  - **`basecode_follow_the_gap`** - Beginner-friendly repository for understanding F1Tenth ROS2 topics and workflow
+<div align="center">
 
-### Key Repositories
-Our organization maintains 16 active repositories covering various aspects of autonomous driving:
+| **Perception** | **Planning** | **Control** |
+|:---:|:---:|:---:|
+| Processing sensor data and environment understanding | Path planning and decision making algorithms | Vehicle control and actuation systems |
+| EKF Odometry, Particle Filter, SLAM | Global & Local trajectory planning | Stanley controller, PID systems |
 
-**Core Systems:**
-- `ekf_slam` - EKF-SLAM mapping and localization
-- `particle_filter_localization` - Monte Carlo localization (C++)
-- `teleop-tools` - Manual driving interface
-- `basecode_follow_the_gap` - Educational base code
+</div>
 
-**Planning & Control:**
-- Global trajectory planning algorithms
-- Local path planning systems
-- Stanley & PID control implementations
-- Lattice planning algorithms
+<div align="center">
 
-**Workspace Setup:**
-- `f1thebeast_ws` - Production workspace
-- Base workspace configurations
-- Launch files and parameter configurations
+## **Repository Architecture**
 
-## Getting Started
+</div>
 
-### Prerequisites
-- ROS2 (Humble/Iron recommended)
-- Ubuntu 22.04 LTS
-- F1Tenth hardware platform
+### **Main Repository Structure**
+```
+ultimate_f1thebeast_ws/
+├── f1thebeast_ws/              # Main workspace for online execution
+├── ekf_slam/                   # Custom EKF-SLAM implementation
+├── teleop-tools/               # Keyboard teleoperation tools
+└── basecode_follow_the_gap/    # Beginner-friendly base code
+```
 
-### Quick Setup
-1. Clone the ultimate repository:
-   ```bash
-   git clone --recursive <ultimate_f1thebeast_ws_url>
-   cd ultimate_f1thebeast_ws
-   ```
+<div align="center">
 
-2. Initialize submodules:
-   ```bash
-   git submodule update --init --recursive
-   ```
+### **Technology Stack**
 
-3. Build the workspace:
-   ```bash
-   cd f1thebeast_ws
-   colcon build
-   source install/setup.bash
-   ```
+<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+<img src="https://img.shields.io/badge/ROS2-22314E?style=for-the-badge&logo=ros&logoColor=white">
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white">
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
 
-### Usage Guidelines
+</div>
 
-**For Beginners:**
-- Start with `basecode_follow_the_gap` to understand F1Tenth ROS2 topic flow
-- Practice with `teleop-tools` for manual driving and system familiarization
+### **Key Repositories**
+Our organization maintains **16 active repositories** covering various aspects of autonomous driving:
 
-**For Development:**
-- Use `f1thebeast_ws` for main system execution
-- Implement custom algorithms in respective specialized repositories
+| **Category** | **Repositories** | **Description** |
+|:---:|:---:|:---|
+| **Core Systems** | `ekf_slam`, `particle_filter_localization` | EKF-SLAM mapping, Monte Carlo localization (C++) |
+| **Interfaces** | `teleop-tools`, `basecode_follow_the_gap` | Manual driving interface, Educational base code |
+| **Planning & Control** | Global planning, Local planning, Control systems | Trajectory planning, Stanley & PID implementations |
+| **Workspace** | `f1thebeast_ws` | Production workspace, Launch configurations |
+
+<div align="center">
+
+## **Getting Started**
+
+</div>
+
+### **Prerequisites**
+- **ROS2** (Humble/Iron recommended)
+- **Ubuntu 22.04 LTS**
+- **F1Tenth hardware platform**
+
+### **Quick Setup**
+
+<div align="center">
+
+| **Step** | **Command** | **Description** |
+|:---:|:---|:---|
+| **1** | `git clone --recursive <ultimate_f1thebeast_ws_url>` | Clone ultimate repository |
+| **2** | `git submodule update --init --recursive` | Initialize submodules |
+| **3** | `cd f1thebeast_ws && colcon build` | Build workspace |
+| **4** | `source install/setup.bash` | Source environment |
+
+</div>
+
+### **Usage Guidelines**
+
+<div align="center">
+
+| **User Level** | **Starting Point** | **Focus Areas** |
+|:---:|:---:|:---|
+| **Beginners** | `basecode_follow_the_gap` | Understanding F1Tenth ROS2 topics and workflow |
+| **Developers** | `f1thebeast_ws` | Custom algorithm implementation and testing |
+| **Competition** | `f1thebeast_ws` | Fully integrated systems deployment |
+
+</div>
+
+**Development Workflow:**
+- Use `teleop-tools` for manual driving and system familiarization
 - Test localization with `ekf_slam` and `particle_filter_localization`
-
-**For Competition:**
-- Deploy from `f1thebeast_ws` with fully integrated systems
 - Ensure all submodules are up-to-date before competition runs
 
 ---
 
-*F1TheBeast - Racing towards autonomous excellence* 🚗💨
+<div align="center">
+
+**F1TheBeast - Racing towards autonomous excellence**
+
+*AILAB Summer Internship 2025*
+
+</div>
