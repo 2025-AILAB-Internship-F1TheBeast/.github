@@ -23,7 +23,7 @@
 
 ### **Perception Team**
 - **Jisang Yun** - Team Leader
-  - EKF Odometry & Particle Filter Localization implementation
+  - EKF Odometry with IMU & Particle Filter Localization implementation
 - **Subin Park** - SLAM Engineer  
   - EKF-SLAM implementation & mapping systems
 
